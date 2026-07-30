@@ -1,10 +1,11 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse
 
 app=FastAPI(title="Course Manageent System")
 
 @app.get("/")
 def home():
-    return {"Hello": "World"}
+    return RedirectResponse(url="/docs")
 
 @app.get("/contact")
 def contact():
