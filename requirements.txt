@@ -1,2 +1,9 @@
 fastapi
 uvicorn
+
+#---------------------
+pip install fastapi uvicorn
+pip install streamlit
+pip install requests
+env\Scripts\activate
+python -m uvicorn main:app --reload
